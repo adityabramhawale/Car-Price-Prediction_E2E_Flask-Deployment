@@ -4,14 +4,6 @@
 
 This repository consists of files required for end to end implementation and deployment of Machine Learning Car Price Prediction web application created with Flask
 
-## Table of Contents
-  * [App Link](#app-link)
-  * [About the Link](#about-the-app)
-  * [Deployement on Flask](#deployement-on-heroku)
-  * [Technologies Used](#technologies-used)
-  * [Bug / Feature Request](#bug---feature-request)
-
-
 ## About the Link
 The Car Price Prediction is a flask web application which predicts car prices based on given independent features like Car_Name,	Year,	Selling_Price,	Present_Price,	Kms_Driven,	Fuel_Type,	Seller_Type,	Transmission, and Owner. The dataset is available at Kaggle, and it's provided by cardekho.com. 
 
