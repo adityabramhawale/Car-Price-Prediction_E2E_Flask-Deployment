@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="C:/Users/bramhad/OneDrive - Konecranes Plc/Desktop/Data Science/End to End Projects/Car/static/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                 <a2 class="navbar-brand" href="/">ADITYA CAR DEALERSHIP © 2021</a2>
+                 
+        <br>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+
+    <div class="container">
+<a2>Please fill all inputs as shown below and afterwards click on Selling Price button to check car price</a2>
+
+
+        <form action="\predict" method="post">
+       
+            <h3>Year</h3><input id="first" name="Year" placeholder="eg. like the year '2010' "type="number " >
+        <br>
+        <br>
+            <h3>Showroom Price(lakhs)</h3><input id="second" name="Present_Price" placeholder="eg. '10.45' lakhs"required="required">
+        <br>  
+        <br>  
+            <h3>Kilometers Driven</h3><input id="third" name="Kms_Driven" placeholder="eg. 10000 Km driven before"required="required">
+        <br>
+        <br>
+            <h3>Previous Owners</h3><input id="fourth" name="Owner" placeholder="0 or 1 or 2 Previous Owners" required="required">
+        <br>
+        <br>   
+            
+            <h3>Fuel Type</h3><select name="Fuel_Type_Petrol" id="fuel" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Diesel">CNG</option>
+            </select>
+        <br>
+        <br>
+            <h3>Dealer or Individual</h3><select name="Seller_Type_Individual" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+        <br>
+        <br>
+            <h3>Transmission Type</h3><select name="Transmission_Mannual" id="research" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+            
+            <br><br><button id="sub" type="submit ">Selling Price</button>
+        </form>
+        <h3>{{ prediction_text }}<h3>
+        <br>
+    </div>
+
+
+    <!-- Footer -->
+    <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://github.com/adityabramhawale"><i class="fab fa-github fa-lg contact-icon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aditya-vb6/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+        <p class='footer-description'>© Aditya Bramhawale 2021</p>
+    </div>
+
+
+</body>
+
+</html>
